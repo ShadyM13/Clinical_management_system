@@ -11,7 +11,6 @@ int main(void)
 
     Screeninit();
     while(SelectMode());
-    while(1);
 
     return 0;
 }
