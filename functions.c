@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "STD_types.h"
@@ -46,7 +45,7 @@ int SelectMode()
 void check_admin(void)
 {
     u8  i;
-    u16 password;
+    u32 password;
     
     for(i=1; i<=3; i++)
     {
@@ -69,12 +68,47 @@ void check_admin(void)
             }
             else if(i<3)
             {
-                printf("wrong password, try again (%d trials left)",i);
+                printf("wrong password, try again (%d trials left)",3-i);
 
             }
         }
-        
 
+    }
+
+}
+void AdminChoices(void)
+{
+    u8 admin_choice;
+    while(admin_choice)
+    {
+        printf("1. Add new patient record. \n");
+        printf("2. Edit patient record.\n");
+        printf("3. Reserve a slot with the doctor.\n");
+        printf("4. Cancel reservation.");
+
+        scanf("%d",&admin_choice);
+
+        if(1 == admin_choice)
+        {
+            //add_record();
+        }
+        else if(2 == admin_choice)
+        {
+            //edit_record();
+        }
+        else if(3 == admin_choice)
+        {
+            //PrintReservationtime();
+            //ReservingTimeSlot();
+        }
+        else if(4 == admin_choice)
+        {
+
+        }
+        else
+        {
+
+        }
     }
 }
 void UserMode(void)
