@@ -65,6 +65,8 @@ int main(void)
 void Screeninit(void)
 {
     printf(" ____________________ Clinical Management System ____________________\n");
+    printf("_____________________________SHADY AHMAD_____________________________\n");
+
 }
 
 
