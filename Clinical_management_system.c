@@ -382,7 +382,7 @@ void PrintReservationtime(void)
         }
         else
         {
-            printf("This slot is reserved for patied ID: %d",ReservationArray[j]);
+            printf("This slot is reserved for patied ID: %d\n",ReservationArray[j]);
             printf("____________________________________________________________________________________________\n\n");
         }
     }
